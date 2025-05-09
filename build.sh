@@ -21,5 +21,5 @@ ansible-builder build \
     --build-arg ANSIBLE_GALAXY_SERVER_CERTIFIED_TOKEN \
     --build-arg ANSIBLE_GALAXY_SERVER_VALIDATED_TOKEN \
     -v 3 \
-    -t quay.io/jce-redhat/hashi-demo-ee:$(date +%Y%m%d) -v 3 | tee ansible-builder.log
+    -t quay.io/ajacocks/hashi-demo-ee:$(date +%Y%m%d%S) -v 3 | tee ansible-builder.log
 
